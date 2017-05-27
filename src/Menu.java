@@ -78,11 +78,10 @@ class Menu {
     private void menuOrExit() {
         System.out.println("Елси хотите вернутся в меню нажмите 1.\n" + "Если выйти нажмите 2.");
 
-        Scanner selection2=new Scanner(System.in);
-        int select = selection2.nextInt();
+         selection = scn.nextInt();
 
         do {
-            switch (select) {
+            switch (selection) {
                 case 1:
                     menu();
                     choiceInmenu();
@@ -98,7 +97,7 @@ class Menu {
                     menuOrExit();
                     break;
             }
-        } while (select != 2);
+        } while (selection != 2);
     }
 
     private void exit() {

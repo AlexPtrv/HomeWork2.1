@@ -5,7 +5,7 @@ class Menu {
     private static Scanner scn = new Scanner(System.in);
     private static int selection;
 
-    void Start() {
+    void start() {
         System.out.println("Запуск...");
         System.out.println("Сколько хотите ввести цыфр?");
         arrayHolder.enterNum();
